@@ -25,14 +25,29 @@ The architecture is **production-ready** - just swap the mock with your AI API o
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- Node.js 18+ and npm/pnpm
+- An Anthropic API key (get one at https://console.anthropic.com/settings/keys)
+
+### Setup
+
 ```bash
-# 1. Install dependencies
-npm install
+# 1. Clone the repository
+git clone https://github.com/samueljklee/workspace-canvas-app.git
+cd workspace-canvas-app
 
-# 2. Build the Electron main process
+# 2. Install dependencies
+npm install  # or pnpm install
+
+# 3. Rebuild native modules for Electron (IMPORTANT!)
+npm run rebuild
+
+# 4. Set up environment variables
+cp .env.example .env
+# Edit .env and add your Anthropic API key
+
+# 5. Build and run
 npm run build:main
-
-# 3. Start the app
 npm start
 ```
 

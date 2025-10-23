@@ -1,0 +1,129 @@
+/**
+ * Workspace Canvas - Log Viewer Styles
+ */
+
+.log-viewer {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #1a1a1a;
+  position: relative;
+  scroll-behavior: smooth;
+  min-height: 0; /* Allow flex shrinking */
+  max-height: 100%; /* Don't overflow container */
+}
+
+.log-viewer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.log-viewer::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.log-viewer::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+.log-viewer::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
+
+.log-entries {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-entry {
+  display: flex;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(58, 58, 58, 0.3);
+  align-items: flex-start;
+}
+
+.log-entry:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.log-timestamp {
+  color: #6b7280;
+  flex-shrink: 0;
+  user-select: none;
+  font-size: 11px;
+  min-width: 60px;
+}
+
+.log-level {
+  font-weight: 600;
+  flex-shrink: 0;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  min-width: 60px;
+}
+
+.log-message {
+  color: #d4d4d4;
+  flex: 1;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  user-select: text; /* Allow text selection for copying */
+  cursor: text;
+}
+
+/* Level-specific colors */
+.log-entry--info .log-level {
+  color: #3b82f6;
+}
+
+.log-entry--success .log-level {
+  color: #10b981;
+}
+
+.log-entry--warn .log-level {
+  color: #f59e0b;
+}
+
+.log-entry--error .log-level {
+  color: #ef4444;
+}
+
+.log-entry--error {
+  background: rgba(239, 68, 68, 0.05);
+}
+
+/* Scroll to bottom button */
+.log-viewer-scroll-to-bottom {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.log-viewer-scroll-to-bottom:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.log-viewer-scroll-to-bottom:active {
+  background: #1d4ed8;
+  transform: translateY(0);
+}

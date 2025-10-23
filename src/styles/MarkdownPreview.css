@@ -1,0 +1,186 @@
+/**
+ * Workspace Canvas - Markdown Preview Styles
+ */
+
+.markdown-preview {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Headings */
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #e5e5e5;
+}
+
+.markdown-preview h1 {
+  font-size: 2em;
+  border-bottom: 1px solid #3a3a3a;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #3a3a3a;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h3 {
+  font-size: 1.25em;
+}
+
+/* Paragraphs */
+.markdown-preview p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Links */
+.markdown-preview a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.markdown-preview a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-preview li {
+  margin-bottom: 4px;
+}
+
+/* Code blocks */
+.code-block {
+  background: #0d0d0d;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+}
+
+.code-block code {
+  background: none;
+  padding: 0;
+  color: #d4d4d4;
+}
+
+/* Inline code */
+.inline-code {
+  background: #2a2a2a;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  color: #e96699;
+}
+
+/* Blockquotes */
+.markdown-preview blockquote {
+  margin: 0 0 16px 0;
+  padding: 0 1em;
+  border-left: 4px solid #3a3a3a;
+  color: #9ca3af;
+}
+
+/* Tables */
+.markdown-preview table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.markdown-preview table th,
+.markdown-preview table td {
+  padding: 6px 13px;
+  border: 1px solid #3a3a3a;
+}
+
+.markdown-preview table th {
+  background: #2a2a2a;
+  font-weight: 600;
+}
+
+.markdown-preview table tr:nth-child(even) {
+  background: #1a1a1a;
+}
+
+/* Horizontal rule */
+.markdown-preview hr {
+  height: 1px;
+  border: 0;
+  background: #3a3a3a;
+  margin: 24px 0;
+}
+
+/* Images */
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+/* Mermaid diagrams */
+.mermaid-diagram {
+  margin: 16px 0;
+  padding: 20px;
+  background: #0d0d0d;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Task lists */
+.markdown-preview input[type='checkbox'] {
+  margin-right: 8px;
+}
+
+/* Scrollbar */
+.markdown-preview::-webkit-scrollbar {
+  width: 8px;
+}
+
+.markdown-preview::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.markdown-preview::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+.markdown-preview::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}

@@ -1,0 +1,166 @@
+/**
+ * Workspace Canvas - Workspace Tabs Styles
+ * Browser-style tabs with smooth animations
+ */
+
+.workspace-tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  user-select: none;
+}
+
+.workspace-tabs-list {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.workspace-tabs-list::-webkit-scrollbar {
+  height: 0;
+}
+
+.workspace-tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  min-width: 120px;
+  max-width: 200px;
+  padding: 0 12px;
+  background: #252525;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.workspace-tab:hover {
+  background: #2a2a2a;
+}
+
+.workspace-tab.active {
+  background: #2d2d2d;
+  border-color: #3e3e3e;
+  box-shadow: 0 -2px 0 #3b82f6 inset;
+}
+
+.workspace-tab-name {
+  flex: 1;
+  font-size: 13px;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s;
+}
+
+.workspace-tab.active .workspace-tab-name {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.workspace-tab-input {
+  flex: 1;
+  background: #1a1a1a;
+  border: 1px solid #3b82f6;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+  color: #e0e0e0;
+  outline: none;
+}
+
+.workspace-tab-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.workspace-tab:hover .workspace-tab-close {
+  display: flex;
+}
+
+.workspace-tab-close:hover {
+  background: #3a3a3a;
+  color: #ef4444;
+}
+
+.workspace-tab-shortcut {
+  display: none;
+  font-size: 10px;
+  color: #6b7280;
+  font-weight: 500;
+  padding: 2px 4px;
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+
+.workspace-tab.active .workspace-tab-shortcut {
+  display: block;
+}
+
+.workspace-tab:hover .workspace-tab-shortcut {
+  display: none;
+}
+
+.workspace-tab-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #6b7280;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.workspace-tab-new:hover {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+/* Smooth enter/exit animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.workspace-tab {
+  animation: slideIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

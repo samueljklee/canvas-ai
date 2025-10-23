@@ -1,0 +1,19 @@
+PROPRIETARY AND CONFIDENTIAL
+
+Workspace Canvas App
+Copyright (c) 2025 Microsoft Corporation
+All Rights Reserved.
+
+NOTICE: This software and its associated documentation are the proprietary
+and confidential information of Microsoft Corporation. They are provided
+under a license agreement containing restrictions on use and disclosure
+and are also protected by copyright, patent, and other intellectual property
+laws. Unauthorized copying, distribution, reproduction, modification, or use
+of this software or its documentation, in whole or in part, is strictly
+prohibited without prior written permission from Microsoft Corporation.
+
+This software is provided "AS IS" without warranty of any kind, either
+expressed or implied, including but not limited to the implied warranties
+of merchantability and fitness for a particular purpose.
+
+For licensing inquiries, contact: samule@microsoft.com

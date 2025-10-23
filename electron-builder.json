@@ -1,0 +1,97 @@
+{
+  "appId": "com.microsoft.workspace-canvas",
+  "productName": "Workspace Canvas",
+  "copyright": "Copyright © 2025 Microsoft Corporation",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "node_modules",
+    "!dist/mac-arm64",
+    "!dist/builder-debug.yml",
+    "!node_modules/.cache"
+  ],
+  "asarUnpack": [
+    "**/*.node"
+  ],
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["arm64", "x64"]
+      },
+      {
+        "target": "zip",
+        "arch": ["arm64", "x64"]
+      }
+    ],
+    "category": "public.app-category.developer-tools",
+    "icon": "build/icon.icns",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist",
+    "minimumSystemVersion": "10.15.0"
+  },
+  "dmg": {
+    "title": "Workspace Canvas ${version}",
+    "icon": "build/icon.icns",
+    "backgroundColor": "#1a1a1a",
+    "window": {
+      "width": 540,
+      "height": 380
+    },
+    "contents": [
+      {
+        "x": 144,
+        "y": 200,
+        "type": "file"
+      },
+      {
+        "x": 396,
+        "y": 200,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Workspace Canvas",
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico",
+    "license": "LICENSE.txt"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Development",
+    "icon": "build/icon.png",
+    "synopsis": "AI-powered workspace with multiple Claude agents",
+    "description": "Coordinate multiple Claude AI agents in an infinite canvas workspace. Manage conversations, browse files, and edit documents with AI assistance."
+  },
+  "publish": {
+    "provider": "github",
+    "owner": "microsoft",
+    "repo": "workspace-canvas-app"
+  }
+}

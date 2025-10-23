@@ -42,8 +42,6 @@
     "dist": "npm run build:all && pnpm install --prod && npx electron-builder && pnpm install",
     "dist:mac": "npm run build:all && pnpm install --prod && npx electron-builder --mac && pnpm install",
     "dist:win": "npm run build:all && pnpm install --prod && npx electron-builder --win && pnpm install",
-    "dist:all": "npm run build:all && pnpm install --prod && npx electron-builder --mac --win --linux && pnpm install",
-    "dist:win": "npm run build:all && pnpm install --prod && npx electron-builder --win && pnpm install",
     "dist:linux": "npm run build:all && pnpm install --prod && npx electron-builder --linux && pnpm install",
     "dist:all": "npm run build:all && pnpm install --prod && npx electron-builder --mac --win --linux && pnpm install",
     "repackage": "npm run dist:mac",

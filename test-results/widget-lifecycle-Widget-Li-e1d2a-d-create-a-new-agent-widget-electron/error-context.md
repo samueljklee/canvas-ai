@@ -1,0 +1,50 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6] [cursor=pointer]:
+      - generic "Default Workspace" [ref=e7]
+      - generic [ref=e8]: ⌘1
+    - button "+" [ref=e9] [cursor=pointer]
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - button "New" [ref=e12] [cursor=pointer]
+      - button "📁 File Browser" [ref=e13] [cursor=pointer]
+      - button "📝 Editor" [ref=e14] [cursor=pointer]
+    - generic [ref=e16]:
+      - button "⚓ Arrange" [ref=e17] [cursor=pointer]
+      - button "🗑️ Clear" [ref=e18] [cursor=pointer]
+    - generic [ref=e20]:
+      - button "🔍-" [ref=e21] [cursor=pointer]
+      - generic [ref=e22]: 100%
+      - button "🔍+" [ref=e23] [cursor=pointer]
+      - button "⟲ Reset" [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - generic [ref=e26]: "Widgets: 1"
+      - generic [ref=e27]: "Selected: None"
+      - generic "Last auto-save time" [ref=e28]: 💾 Synced 10:17:47 AM
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic "idle" [ref=e33]
+        - heading "Agent 1" [level=3] [ref=e34] [cursor=pointer]
+      - generic [ref=e35]:
+        - button "Minimize (Compact View)" [ref=e36] [cursor=pointer]:
+          - img [ref=e37]
+        - button "Close Widget" [ref=e38] [cursor=pointer]:
+          - img [ref=e39]
+    - generic [ref=e42]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: 10:13:30
+          - generic [ref=e47]: "[INFO]"
+          - generic [ref=e48]: Agent 1 initialized
+        - generic [ref=e49]:
+          - generic [ref=e50]: 10:14:01
+          - generic [ref=e51]: "[INFO]"
+          - generic [ref=e52]: "> Hello! Hello! 👋 It's great to meet you! I'm Agent 1, your helpful AI assistant. I'm here to help you with a wide variety of tasks. I can: - 💻 Execute commands and work with files - 🌐 Search the web and fetch information - 📝 Create documents and text editors - 📁 Browse file systems - 🎨 Generate interactive apps and visual interfaces - 🤖 Spawn additional AI agents to help with tasks What would you like to work on today?"
+      - generic [ref=e53]:
+        - textbox "Enter command... (↑↓ history, @ files, / commands)" [active] [ref=e55]
+        - button "Send" [disabled] [ref=e56]
+```

@@ -1,0 +1,125 @@
+/**
+ * Canvas AI - Generated App Styles
+ */
+
+.generated-app {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make generated app content responsive */
+.generated-app > * {
+  flex: 1;
+  min-height: 0; /* Allow flex child to shrink below content size */
+  display: flex;
+  flex-direction: column;
+}
+
+.generated-app-loading,
+.generated-app-error,
+.generated-app-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.generated-app-loading .loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #3e3e3e;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.generated-app-loading p {
+  color: #808080;
+  font-size: 14px;
+}
+
+.generated-app-error {
+  background: #2d1f1f;
+  color: #ef4444;
+}
+
+.generated-app-error h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.generated-app-error p {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #fca5a5;
+}
+
+.generated-app-error details {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.generated-app-error summary {
+  cursor: pointer;
+  padding: 8px 12px;
+  background: #3e2020;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #fca5a5;
+}
+
+.generated-app-error summary:hover {
+  background: #4e2525;
+}
+
+.generated-app-error pre {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.generated-app-empty {
+  color: #808080;
+  font-size: 14px;
+}
+
+/* Scrollbar for generated apps */
+.generated-app::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.generated-app::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.generated-app::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 5px;
+}
+
+.generated-app::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e;
+}

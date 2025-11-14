@@ -1,0 +1,153 @@
+/**
+ * Canvas AI - Document Editor Styles
+ */
+
+.document-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.document-editor--minimized {
+  padding: 8px 12px;
+  overflow: hidden;
+}
+
+.document-editor-preview {
+  font-size: 12px;
+  color: #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.document-editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #252525;
+  border-bottom: 1px solid #3e3e3e;
+  font-size: 12px;
+}
+
+.document-editor-save-btn {
+  padding: 4px 12px;
+  background: #0e639c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.document-editor-save-btn:hover:not(:disabled) {
+  background: #1177bb;
+}
+
+.document-editor-save-btn:disabled {
+  background: #3e3e3e;
+  color: #808080;
+  cursor: default;
+}
+
+.document-editor-info {
+  color: #808080;
+  font-size: 11px;
+}
+
+.document-editor-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.document-editor-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.document-editor-path {
+  color: #808080;
+  font-size: 11px;
+  padding: 4px 8px;
+  background: #2a2a2a;
+  border-radius: 3px;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.document-editor-path--unsaved {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.document-editor-view-modes {
+  display: flex;
+  gap: 4px;
+  background: #1e1e1e;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.view-mode-btn {
+  padding: 4px 10px;
+  background: transparent;
+  color: #808080;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.view-mode-btn:hover {
+  background: #2a2a2a;
+  color: #d4d4d4;
+}
+
+.view-mode-btn.active {
+  background: #0e639c;
+  color: white;
+}
+
+.document-editor-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0; /* Critical for flex children to respect overflow */
+}
+
+.document-editor-content--code .document-editor-monaco {
+  flex: 1;
+}
+
+.document-editor-content--preview .document-editor-preview {
+  flex: 1;
+}
+
+.document-editor-content--split .document-editor-monaco,
+.document-editor-content--split .document-editor-preview {
+  flex: 1;
+  border-right: 1px solid #3e3e3e;
+}
+
+.document-editor-content--split .document-editor-preview {
+  border-right: none;
+}
+
+.document-editor-monaco {
+  overflow: hidden;
+  height: 100%; /* Ensure Monaco fills container properly */
+}
+
+.document-editor-preview {
+  overflow: hidden;
+}

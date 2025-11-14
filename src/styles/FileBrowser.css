@@ -1,0 +1,460 @@
+/**
+ * Canvas AI - File Browser Styles
+ */
+
+.file-browser {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.file-browser--minimized {
+  padding: 8px 12px;
+  overflow: hidden;
+}
+
+.file-browser-path-mini {
+  font-size: 12px;
+  color: #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-browser-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #252525;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.file-browser-back-btn,
+.file-browser-refresh-btn {
+  padding: 4px 12px;
+  background: #3e3e3e;
+  color: #d4d4d4;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.file-browser-back-btn:hover:not(:disabled),
+.file-browser-refresh-btn:hover {
+  background: #4e4e4e;
+}
+
+.file-browser-back-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-browser-path {
+  flex: 1;
+  font-size: 12px;
+  color: #cccccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 8px;
+  background: #2d2d2d;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.file-browser-path:hover {
+  background: #3e3e3e;
+}
+
+/* Path input form */
+.file-browser-path-form {
+  flex: 1;
+  position: relative;
+}
+
+.file-browser-path-input {
+  width: 100%;
+  padding: 4px 8px;
+  background: #1e1e1e;
+  border: 1px solid #3b82f6;
+  border-radius: 3px;
+  color: #d4d4d4;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.file-browser-path-input::placeholder {
+  color: #6b7280;
+}
+
+/* Path autocomplete suggestions */
+.file-browser-path-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: #2d2d2d;
+  border: 1px solid #3e3e3e;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.file-browser-path-suggestion {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #d4d4d4;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.file-browser-path-suggestion:last-child {
+  border-bottom: none;
+}
+
+.file-browser-path-suggestion:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.file-browser-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.file-browser-actions-divider {
+  width: 1px;
+  height: 20px;
+  background: #3e3e3e;
+  margin: 0 4px;
+}
+
+.file-browser-view-btn {
+  padding: 4px 10px;
+  background: #3e3e3e;
+  color: #d4d4d4;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.file-browser-view-btn:hover {
+  background: #4e4e4e;
+}
+
+.file-browser-view-btn.active {
+  background: #0e639c;
+  color: white;
+}
+
+.file-browser-action-btn {
+  padding: 4px 10px;
+  background: #0e639c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.file-browser-action-btn:hover {
+  background: #1177bb;
+}
+
+.file-browser-create-form {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #252525;
+  border-bottom: 1px solid #3e3e3e;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.file-browser-create-input {
+  flex: 1;
+  padding: 6px 10px;
+  background: #1e1e1e;
+  border: 1px solid #3a3a3a;
+  border-radius: 3px;
+  color: #e5e5e5;
+  font-size: 12px;
+  outline: none;
+}
+
+.file-browser-create-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.file-browser-create-submit {
+  padding: 6px 12px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.file-browser-create-submit:hover:not(:disabled) {
+  background: #059669;
+}
+
+.file-browser-create-submit:disabled {
+  background: #374151;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.file-browser-create-cancel {
+  padding: 6px 12px;
+  background: #3e3e3e;
+  color: #d4d4d4;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.file-browser-create-cancel:hover {
+  background: #4e4e4e;
+}
+
+.file-browser-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.file-browser-loading,
+.file-browser-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #808080;
+  font-size: 13px;
+}
+
+.file-browser-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.file-browser-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.file-browser-item:hover {
+  background: #2a2a2a;
+}
+
+.file-browser-item--selected {
+  background: #0e639c !important;
+  color: white;
+}
+
+.file-browser-item--directory {
+  font-weight: 500;
+}
+
+.file-browser-item-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.file-browser-item-name {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-browser-footer {
+  padding: 8px 12px;
+  background: #252525;
+  border-top: 1px solid #3e3e3e;
+  font-size: 11px;
+  color: #808080;
+}
+
+.file-browser-selected {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Scrollbar styling */
+.file-browser-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.file-browser-content::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.file-browser-content::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 5px;
+}
+
+.file-browser-content::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e;
+}
+
+/* Context menu */
+.file-browser-context-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.file-browser-context-menu {
+  position: fixed;
+  background: #2a2a2a;
+  border: 1px solid #3e3e3e;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  min-width: 180px;
+  padding: 4px 0;
+  z-index: 1000;
+  animation: contextMenuFadeIn 0.15s ease-out;
+}
+
+@keyframes contextMenuFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.file-browser-context-menu-item {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #d4d4d4;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.1s;
+}
+
+.file-browser-context-menu-item:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.file-browser-context-menu-divider {
+  height: 1px;
+  background: #3e3e3e;
+  margin: 4px 0;
+}
+
+/* Rename input */
+.file-browser-rename-input {
+  flex: 1;
+  padding: 2px 6px;
+  background: #1e1e1e;
+  border: 1px solid #3b82f6;
+  border-radius: 3px;
+  color: #e5e5e5;
+  font-size: 13px;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Tile View */
+.file-browser-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  padding: 4px;
+}
+
+.file-browser-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  background: #252525;
+  border: 2px solid transparent;
+}
+
+.file-browser-tile:hover {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+.file-browser-tile--selected {
+  background: #0e639c !important;
+  border-color: #1177bb !important;
+}
+
+.file-browser-tile--directory {
+  font-weight: 500;
+}
+
+.file-browser-tile-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.file-browser-tile-name {
+  font-size: 12px;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.3;
+  max-height: 2.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

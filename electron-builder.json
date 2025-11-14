@@ -1,0 +1,97 @@
+{
+  "appId": "com.samueljklee.canvas-ai",
+  "productName": "Canvas AI",
+  "copyright": "Copyright © 2025 Samuel Lee",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "node_modules",
+    "!dist/mac-arm64",
+    "!dist/builder-debug.yml",
+    "!node_modules/.cache"
+  ],
+  "asarUnpack": [
+    "**/*.node"
+  ],
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["arm64", "x64"]
+      },
+      {
+        "target": "zip",
+        "arch": ["arm64", "x64"]
+      }
+    ],
+    "category": "public.app-category.developer-tools",
+    "icon": "build/icon.icns",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist",
+    "minimumSystemVersion": "10.15.0"
+  },
+  "dmg": {
+    "title": "Canvas AI ${version}",
+    "icon": "build/icon.icns",
+    "backgroundColor": "#1a1a1a",
+    "window": {
+      "width": 540,
+      "height": 380
+    },
+    "contents": [
+      {
+        "x": 144,
+        "y": 200,
+        "type": "file"
+      },
+      {
+        "x": 396,
+        "y": 200,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Canvas AI",
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico",
+    "license": "LICENSE.txt"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Development",
+    "icon": "build/icon.png",
+    "synopsis": "Visual AI agent orchestrator on an infinite canvas",
+    "description": "Visual AI agent orchestrator on an infinite 2D canvas. Create apps on the fly, organize work in your viewport, and interact with your file system dynamically."
+  },
+  "publish": {
+    "provider": "github",
+    "owner": "samueljklee",
+    "repo": "canvas-ai"
+  }
+}

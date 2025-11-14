@@ -1,0 +1,190 @@
+/**
+ * Canvas AI - AgentWidget Styles
+ * Main widget styling with states and animations
+ */
+
+.agent-widget {
+  background: #1e1e1e;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: grab;
+  user-select: none;
+}
+
+.agent-widget:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.agent-widget--selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.agent-widget--dragging {
+  cursor: grabbing;
+  opacity: 0.9;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: none !important;
+  will-change: transform;
+}
+
+/* State-specific styles */
+.agent-widget--minimized {
+  cursor: pointer;
+}
+
+.agent-widget--compact {
+  cursor: pointer;
+}
+
+.agent-widget--expanded {
+  cursor: grab;
+}
+
+/* Status-specific styles */
+.agent-widget--running {
+  border-left: 3px solid #3b82f6;
+}
+
+.agent-widget--error {
+  border-left: 3px solid #ef4444;
+}
+
+.agent-widget--completed {
+  border-left: 3px solid #10b981;
+}
+
+.agent-widget--paused {
+  border-left: 3px solid #f59e0b;
+}
+
+/* Resize handles */
+.widget-resize-handles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.resize-handle {
+  position: absolute;
+  pointer-events: all;
+  z-index: 10;
+}
+
+.resize-handle--n,
+.resize-handle--s {
+  left: -2px;
+  right: -2px;
+  height: 24px;
+  cursor: ns-resize;
+}
+
+.resize-handle--n {
+  top: -12px;
+}
+
+.resize-handle--s {
+  bottom: -12px;
+}
+
+.resize-handle--e,
+.resize-handle--w {
+  top: -2px;
+  bottom: -2px;
+  width: 24px;
+  cursor: ew-resize;
+}
+
+.resize-handle--e {
+  right: -15px;
+}
+
+.resize-handle--w {
+  left: -15px;
+}
+
+.resize-handle--ne,
+.resize-handle--nw,
+.resize-handle--se,
+.resize-handle--sw {
+  width: 28px;
+  height: 28px;
+}
+
+.resize-handle--ne {
+  top: -14px;
+  right: -18px;
+  cursor: nesw-resize;
+}
+
+.resize-handle--nw {
+  top: -14px;
+  left: -18px;
+  cursor: nwse-resize;
+}
+
+.resize-handle--se {
+  bottom: -14px;
+  right: -18px;
+  cursor: nwse-resize;
+}
+
+.resize-handle--sw {
+  bottom: -14px;
+  left: -18px;
+  cursor: nesw-resize;
+}
+
+.resize-handle:hover::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #3b82f6;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+/* Relationship indicator */
+.widget-relationships-indicator {
+  position: absolute;
+  inset: -2px;
+  border: 2px dashed #3b82f6;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0.3;
+  animation: dashOffset 20s linear infinite;
+}
+
+@keyframes dashOffset {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.agent-widget {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Accessibility */
+.agent-widget:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

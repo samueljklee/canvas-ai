@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas MVP - Entry Point
+ * Canvas AI MVP - Entry Point
  */
 
 import React from 'react';

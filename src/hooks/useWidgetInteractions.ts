@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Interactions Hook
+ * Canvas AI - Widget Interactions Hook
  * Handles click, double-click, right-click, and drag interactions
  */
 

@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - FileBrowser Component Tests
+ * Canvas AI - FileBrowser Component Tests
  * Tests for file browser with real file system integration
  */
 

@@ -1,4 +1,4 @@
-# Workspace Canvas MVP - Implementation Details
+# Canvas AI MVP - Implementation Details
 
 ## Widget System Architecture
 
@@ -329,5 +329,5 @@ interface CanvasControls {
 
 ---
 
-This implementation provides a solid foundation for the Workspace Canvas MVP.
+This implementation provides a solid foundation for the Canvas AI MVP.
 All core functionality is in place and ready for integration with the canvas system.

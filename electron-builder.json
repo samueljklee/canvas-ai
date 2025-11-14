@@ -1,7 +1,7 @@
 {
-  "appId": "com.microsoft.workspace-canvas",
-  "productName": "Workspace Canvas",
-  "copyright": "Copyright © 2025 Microsoft Corporation",
+  "appId": "com.samueljklee.canvas-ai",
+  "productName": "Canvas AI",
+  "copyright": "Copyright © 2025 Samuel Lee",
   "directories": {
     "output": "release",
     "buildResources": "build"
@@ -37,7 +37,7 @@
     "minimumSystemVersion": "10.15.0"
   },
   "dmg": {
-    "title": "Workspace Canvas ${version}",
+    "title": "Canvas AI ${version}",
     "icon": "build/icon.icns",
     "backgroundColor": "#1a1a1a",
     "window": {
@@ -77,7 +77,7 @@
     "allowToChangeInstallationDirectory": true,
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "Workspace Canvas",
+    "shortcutName": "Canvas AI",
     "installerIcon": "build/icon.ico",
     "uninstallerIcon": "build/icon.ico",
     "license": "LICENSE.txt"
@@ -86,12 +86,12 @@
     "target": ["AppImage", "deb"],
     "category": "Development",
     "icon": "build/icon.png",
-    "synopsis": "AI-powered workspace with multiple Claude agents",
-    "description": "Coordinate multiple Claude AI agents in an infinite canvas workspace. Manage conversations, browse files, and edit documents with AI assistance."
+    "synopsis": "Visual AI agent orchestrator on an infinite canvas",
+    "description": "Visual AI agent orchestrator on an infinite 2D canvas. Create apps on the fly, organize work in your viewport, and interact with your file system dynamically."
   },
   "publish": {
     "provider": "github",
-    "owner": "microsoft",
-    "repo": "workspace-canvas-app"
+    "owner": "samueljklee",
+    "repo": "canvas-ai"
   }
 }

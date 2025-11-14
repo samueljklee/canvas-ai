@@ -1,4 +1,4 @@
-# Workspace Canvas MVP - Quick Reference
+# Canvas AI MVP - Quick Reference
 
 ## Project Stats
 

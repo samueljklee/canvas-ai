@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Electron Main Process
+ * Canvas AI - Electron Main Process
  * Manages Claude Code instances and IPC communication
  */
 
@@ -505,7 +505,7 @@ ipcMain.handle('settings:get-api-key', async () => {
     const path = await import('path');
 
     // Store API key in user's config directory
-    const configDir = path.join(os.homedir(), '.workspace-canvas');
+    const configDir = path.join(os.homedir(), '.canvas-ai');
     const configFile = path.join(configDir, 'config.json');
 
     try {
@@ -529,7 +529,7 @@ ipcMain.handle('settings:save-api-key', async (_event, apiKey: string) => {
     const path = await import('path');
 
     // Store API key in user's config directory
-    const configDir = path.join(os.homedir(), '.workspace-canvas');
+    const configDir = path.join(os.homedir(), '.canvas-ai');
     const configFile = path.join(configDir, 'config.json');
 
     // Ensure config directory exists

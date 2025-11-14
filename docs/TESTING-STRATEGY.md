@@ -1,8 +1,8 @@
-# Testing Strategy for Workspace Canvas App
+# Testing Strategy for Canvas AI App
 
 ## Executive Summary
 
-This document outlines a comprehensive testing strategy for the Workspace Canvas Electron application. The app has a complex architecture with Electron main process, renderer process (React), IPC communication, SQLite database, and Anthropic API integration.
+This document outlines a comprehensive testing strategy for the Canvas AI Electron application. The app has a complex architecture with Electron main process, renderer process (React), IPC communication, SQLite database, and Anthropic API integration.
 
 ## Quick Testing Commands
 
@@ -35,7 +35,7 @@ npm run test:coverage
 **Steps**:
 1. **Reset to fresh state**:
    ```bash
-   rm -rf ~/Library/Application\ Support/workspace-canvas
+   rm -rf ~/Library/Application\ Support/canvas-ai
    ```
 
 2. **Launch the app**:

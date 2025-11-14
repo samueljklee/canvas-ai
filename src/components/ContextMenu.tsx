@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Context Menu Component
+ * Canvas AI - Context Menu Component
  * Right-click context menu with widget actions
  */
 

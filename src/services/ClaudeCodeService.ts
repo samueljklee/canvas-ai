@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Claude Code Service
+ * Canvas AI - Claude Code Service
  * Renderer-side service for interacting with Claude Code instances
  */
 

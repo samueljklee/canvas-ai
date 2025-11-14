@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Claude Code Process Manager
+ * Canvas AI - Claude Code Process Manager
  * Spawns and manages Claude Code instances
  */
 

@@ -154,7 +154,7 @@ This explicitly tells electron-builder to:
 After implementing fix:
 
 - [ ] `npm run pack` completes without errors
-- [ ] Can launch app from `release/mac-arm64/Workspace Canvas.app`
+- [ ] Can launch app from `release/mac-arm64/Canvas AI.app`
 - [ ] Onboarding wizard appears on first launch
 - [ ] API key can be configured
 - [ ] Agents can be created

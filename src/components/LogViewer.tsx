@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Log Viewer Component
+ * Canvas AI - Log Viewer Component
  * Auto-scrolling log viewer with responsive line heights
  */
 

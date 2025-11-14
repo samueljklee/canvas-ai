@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Header Component
+ * Canvas AI - Widget Header Component
  * Header with title, status indicator, and controls
  */
 

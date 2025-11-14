@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Tool Definitions
+ * Canvas AI - Tool Definitions
  * Anthropic API tool definitions for Claude agents
  */
 

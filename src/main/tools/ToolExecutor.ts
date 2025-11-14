@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Tool Executor
+ * Canvas AI - Tool Executor
  * Handles execution of various tools for Claude agents
  */
 

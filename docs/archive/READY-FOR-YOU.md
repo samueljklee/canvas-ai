@@ -1,4 +1,4 @@
-# 🎉 Workspace Canvas - Ready for Your Review!
+# 🎉 Canvas AI - Ready for Your Review!
 
 **Date:** 2025-10-14
 **Status:** Phase 1 & 2 Complete and Working
@@ -27,7 +27,7 @@ I successfully implemented **Phase 1 (ConfigManager)** and **Phase 2 (Onboarding
 
 ```bash
 # 1. Delete config to simulate fresh install
-rm -rf ~/Library/Application\ Support/workspace-canvas/
+rm -rf ~/Library/Application\ Support/canvas-ai/
 
 # 2. Launch the app
 npm run dev
@@ -151,7 +151,7 @@ See **docs/ONBOARDING-AND-PACKAGING-USER-INPUT.md** for details, but here are th
 
 1. **Company/Author Name:**
    - Package metadata needs author
-   - Use "Workspace Canvas Team" or your name/company?
+   - Use "Canvas AI Team" or your name/company?
 
 2. **App Version:**
    - Start with `0.1.0-beta` or `1.0.0`?
@@ -194,7 +194,7 @@ See **docs/ONBOARDING-AND-PACKAGING-USER-INPUT.md** for details, but here are th
 
 1. **Test the Onboarding:**
    ```bash
-   rm -rf ~/Library/Application\ Support/workspace-canvas/
+   rm -rf ~/Library/Application\ Support/canvas-ai/
    npm run dev
    # Go through wizard and provide feedback
    ```
@@ -227,7 +227,7 @@ See **docs/ONBOARDING-AND-PACKAGING-USER-INPUT.md** for details, but here are th
 - I'll complete Phase 3 packaging
 
 **Option 2: Let me use placeholders**
-- I'll use "Workspace Canvas Team" and temp icons
+- I'll use "Canvas AI Team" and temp icons
 - You can update later before final release
 
 **Option 3: You take over**

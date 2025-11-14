@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Canvas State Management Hook
+ * Canvas AI - Canvas State Management Hook
  * Manages all widgets, selection, and z-index
  */
 

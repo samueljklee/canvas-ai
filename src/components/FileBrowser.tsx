@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - File Browser Component
+ * Canvas AI - File Browser Component
  * Interactive file/directory browser with tree view
  */
 

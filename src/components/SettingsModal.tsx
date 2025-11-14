@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Settings Modal
+ * Canvas AI - Settings Modal
  * Configure application settings including API keys
  */
 
@@ -426,7 +426,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, i
                 <button
                   className="settings-button settings-button-secondary"
                   onClick={async () => {
-                    await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Workspace Canvas Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Workspace Canvas:\n\n')}`);
+                    await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Canvas AI Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Canvas AI:\n\n')}`);
                   }}
                   style={{ marginTop: '12px' }}
                 >
@@ -439,7 +439,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, i
 
         <div className="settings-modal-footer">
           <p>
-            Workspace Canvas · Press <kbd>Esc</kbd> to close
+            Canvas AI · Press <kbd>Esc</kbd> to close
           </p>
         </div>
       </div>

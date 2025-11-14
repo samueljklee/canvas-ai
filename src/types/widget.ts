@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Type Definitions
+ * Canvas AI - Widget Type Definitions
  * Core types for agent widgets and their states
  */
 

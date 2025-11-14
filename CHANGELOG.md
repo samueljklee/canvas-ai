@@ -1,4 +1,4 @@
-# Workspace Canvas - Changelog
+# Canvas AI - Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -227,7 +227,7 @@ The v2.0 release adds a new `widget_state` column to the widgets table. The migr
 
 ```bash
 # Backup database
-cp ~/.workspace-canvas/workspace.db ~/.workspace-canvas/workspace.db.backup
+cp ~/.canvas-ai/workspace.db ~/.canvas-ai/workspace.db.backup
 
 # Launch app (migration runs automatically)
 npm start
@@ -290,7 +290,7 @@ npm start
 ## Contributing
 
 ### Reporting Bugs
-Please use the issue tracker: https://github.com/yourusername/workspace-canvas/issues
+Please use the issue tracker: https://github.com/yourusername/canvas-ai/issues
 
 Include:
 - Version number
@@ -333,6 +333,6 @@ MIT License - see LICENSE file for details
 
 ## Contact
 
-- GitHub: https://github.com/yourusername/workspace-canvas
-- Issues: https://github.com/yourusername/workspace-canvas/issues
-- Discussions: https://github.com/yourusername/workspace-canvas/discussions
+- GitHub: https://github.com/yourusername/canvas-ai
+- Issues: https://github.com/yourusername/canvas-ai/issues
+- Discussions: https://github.com/yourusername/canvas-ai/discussions

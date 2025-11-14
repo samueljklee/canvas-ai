@@ -1,7 +1,7 @@
 
 ▗ ▗   ▖ ▖  Claude Code v2.0.10
            Sonnet 4.5 · API Usage Billing
-  ▘▘ ▝▝    /Users/samule/repo/workspace-canvas-app
+  ▘▘ ▝▝    /Users/samule/repo/canvas-ai
 ═════════════════════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═════════════════════════════════════════════════════════════════════
   ⎿  Referenced file src/Canvas.tsx
   ⎿  Read src/styles/Canvas.css (132 lines)

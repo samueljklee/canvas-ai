@@ -1,7 +1,7 @@
 {
-  "name": "workspace-canvas",
+  "name": "canvas-ai",
   "version": "0.1.0-beta",
-  "description": "Coordinate multiple Claude AI agents in an infinite canvas workspace",
+  "description": "Visual AI agent orchestrator on an infinite 2D canvas",
   "main": "dist/main/main/index.js",
   "author": {
     "name": "Samuel Lee",
@@ -10,9 +10,9 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/workspace-canvas-app"
+    "url": "https://github.com/samueljklee/canvas-ai"
   },
-  "homepage": "https://github.com/microsoft/workspace-canvas-app",
+  "homepage": "https://github.com/samueljklee/canvas-ai",
   "scripts": {
     "rebuild": "electron-rebuild -f -w better-sqlite3",
     "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",

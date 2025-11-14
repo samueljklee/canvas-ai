@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-Successfully implemented a complete onboarding and configuration system for Workspace Canvas App, transforming it from a developer-focused .env-based application to a production-ready app with user-friendly setup.
+Successfully implemented a complete onboarding and configuration system for Canvas AI App, transforming it from a developer-focused .env-based application to a production-ready app with user-friendly setup.
 
 **Key Achievements:**
 - ✅ Secure API key encryption with OS-level keychain
@@ -128,7 +128,7 @@ All methods return consistent `{ success: boolean, ...data, error?: string }` fo
 **Step 1: Welcome**
 ```
 ┌─────────────────────────────────────┐
-│  Welcome to Workspace Canvas! 🎨     │
+│  Welcome to Canvas AI! 🎨     │
 │                                      │
 │  Your AI-powered workspace companion │
 │                                      │
@@ -300,14 +300,14 @@ Encrypted Storage on Disk
 ### Storage Locations
 
 **Config Files:**
-- Mac: `~/Library/Application Support/workspace-canvas/config.json`
-- Mac: `~/Library/Application Support/workspace-canvas/secrets.json` (encrypted)
-- Windows: `%APPDATA%/workspace-canvas/config.json`
-- Windows: `%APPDATA%/workspace-canvas/secrets.json` (encrypted)
+- Mac: `~/Library/Application Support/canvas-ai/config.json`
+- Mac: `~/Library/Application Support/canvas-ai/secrets.json` (encrypted)
+- Windows: `%APPDATA%/canvas-ai/config.json`
+- Windows: `%APPDATA%/canvas-ai/secrets.json` (encrypted)
 
 **Database:**
-- Mac: `~/Library/Application Support/workspace-canvas-mvp/workspace.db`
-- Windows: `%APPDATA%/workspace-canvas-mvp/workspace.db`
+- Mac: `~/Library/Application Support/canvas-ai/workspace.db`
+- Windows: `%APPDATA%/canvas-ai/workspace.db`
 
 ### API Key Encryption
 
@@ -599,7 +599,7 @@ Encrypted Storage on Disk
 1. **Fresh Install:**
    ```bash
    # Delete config to simulate fresh install
-   rm -rf ~/Library/Application\ Support/workspace-canvas/
+   rm -rf ~/Library/Application\ Support/canvas-ai/
 
    # Launch app
    npm run dev
@@ -822,7 +822,7 @@ Users will be able to:
 1. **Test the Full Flow:**
    ```bash
    # Delete config to simulate fresh user
-   rm -rf ~/Library/Application\ Support/workspace-canvas/
+   rm -rf ~/Library/Application\ Support/canvas-ai/
 
    # Run app
    npm run dev

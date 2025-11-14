@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Mock IPC Hook
+ * Canvas AI - Mock IPC Hook
  * Simulates real-time log streaming from agents
  */
 

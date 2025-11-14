@@ -1,4 +1,4 @@
-# Workspace Canvas - Product Requirements Document (PRD)
+# Canvas AI - Product Requirements Document (PRD)
 
 **Version:** 2.0
 **Last Updated:** 2025-10-10
@@ -9,7 +9,7 @@
 ## 1. Executive Summary
 
 ### 1.1 Product Vision
-Workspace Canvas is a visual development environment that orchestrates multiple AI agents on an infinite 2D canvas. It enables developers to manage complex multi-agent workflows with real-time collaboration, state persistence, and intelligent task coordination.
+Canvas AI is a visual development environment that orchestrates multiple AI agents on an infinite 2D canvas. It enables developers to manage complex multi-agent workflows with real-time collaboration, state persistence, and intelligent task coordination.
 
 ### 1.2 Core Value Proposition
 - **Visual Organization**: Manage multiple AI agents, terminals, editors, and tools on an infinite canvas

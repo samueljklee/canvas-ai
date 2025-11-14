@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Document Editor Component
+ * Canvas AI - Document Editor Component
  * Monaco-based code editor for document widgets
  */
 

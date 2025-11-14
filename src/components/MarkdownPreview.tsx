@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Markdown Preview Component
+ * Canvas AI - Markdown Preview Component
  * Renders markdown with Mermaid diagram support
  */
 

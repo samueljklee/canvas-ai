@@ -54,7 +54,7 @@ describe('OnboardingWizard Component', () => {
     it('renders welcome step initially', () => {
       render(<OnboardingWizard onComplete={mockOnComplete} onSkip={mockOnSkip} />);
 
-      expect(screen.getByText('Welcome to Workspace Canvas')).toBeInTheDocument();
+      expect(screen.getByText('Welcome to Canvas AI')).toBeInTheDocument();
       expect(screen.getByText(/Your AI-powered workspace companion/i)).toBeInTheDocument();
     });
 
@@ -199,7 +199,7 @@ describe('OnboardingWizard Component', () => {
       const backButton = screen.getByRole('button', { name: /^back$/i });
       fireEvent.click(backButton);
 
-      expect(screen.getByText('Welcome to Workspace Canvas')).toBeInTheDocument();
+      expect(screen.getByText('Welcome to Canvas AI')).toBeInTheDocument();
     });
 
     it('calls skipOnboarding when Skip is clicked', async () => {
@@ -338,11 +338,11 @@ describe('OnboardingWizard Component', () => {
 
     it('renders completion screen', () => {
       expect(screen.getByText('All Set!')).toBeInTheDocument();
-      expect(screen.getByText(/you're ready to start using workspace canvas/i)).toBeInTheDocument();
+      expect(screen.getByText(/you're ready to start using canvas ai/i)).toBeInTheDocument();
     });
 
     it('calls completeOnboarding and onComplete when Start button is clicked', async () => {
-      const startButton = screen.getByRole('button', { name: /start using workspace canvas/i });
+      const startButton = screen.getByRole('button', { name: /start using canvas ai/i });
       fireEvent.click(startButton);
 
       await waitFor(() => {
@@ -354,7 +354,7 @@ describe('OnboardingWizard Component', () => {
     it('calls onComplete even if completeOnboarding fails', async () => {
       mockCompleteOnboarding.mockRejectedValueOnce(new Error('Save error'));
 
-      const startButton = screen.getByRole('button', { name: /start using workspace canvas/i });
+      const startButton = screen.getByRole('button', { name: /start using canvas ai/i });
       fireEvent.click(startButton);
 
       await waitFor(() => {
@@ -627,7 +627,7 @@ describe('OnboardingWizard Component', () => {
 
       // Step 1: Welcome
       await waitFor(() => {
-        expect(screen.getByText('Welcome to Workspace Canvas')).toBeInTheDocument();
+        expect(screen.getByText('Welcome to Canvas AI')).toBeInTheDocument();
       });
       fireEvent.click(screen.getByRole('button', { name: /get started/i }));
 
@@ -656,7 +656,7 @@ describe('OnboardingWizard Component', () => {
         expect(screen.getByText('All Set!')).toBeInTheDocument();
       });
 
-      const startButton = screen.getByRole('button', { name: /start using workspace canvas/i });
+      const startButton = screen.getByRole('button', { name: /start using canvas ai/i });
       fireEvent.click(startButton);
 
       // Verify completion
@@ -936,7 +936,7 @@ describe('OnboardingWizard Component', () => {
         expect(screen.getByText('All Set!')).toBeInTheDocument();
       });
 
-      fireEvent.click(screen.getByRole('button', { name: /start using workspace canvas/i }));
+      fireEvent.click(screen.getByRole('button', { name: /start using canvas ai/i }));
 
       await waitFor(() => {
         expect(mockOnComplete).toHaveBeenCalledTimes(1);

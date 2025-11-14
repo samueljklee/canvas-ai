@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - AgentWidget Component
+ * Canvas AI - AgentWidget Component
  * Main widget component with all interaction modes
  */
 

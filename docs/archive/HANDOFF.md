@@ -1,4 +1,4 @@
-# Workspace Canvas MVP - Widget System Handoff
+# Canvas AI MVP - Widget System Handoff
 
 ## Implementation Status: COMPLETE
 
@@ -97,10 +97,10 @@ All widget system components have been implemented and are ready for integration
 
 ## File Locations
 
-All files are in: `/Users/samule/repo/claude-flow/examples/workspace-canvas-mvp/`
+All files are in: `/Users/samule/repo/claude-flow/examples/canvas-ai/`
 
 ```
-examples/workspace-canvas-mvp/
+examples/canvas-ai/
 ├── src/
 │   ├── components/
 │   │   ├── AgentWidget.tsx

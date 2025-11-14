@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Canvas Pan and Zoom Tests
+ * Canvas AI - Canvas Pan and Zoom Tests
  * Tests for smooth canvas panning and zooming features
  */
 

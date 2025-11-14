@@ -1,4 +1,4 @@
-# Workspace Canvas - Test Plan & Regression Prevention
+# Canvas AI - Test Plan & Regression Prevention
 
 **Version:** 2.0
 **Last Updated:** 2025-10-10
@@ -191,7 +191,7 @@ describe('DocumentEditor Save', () => {
     const widget = {
       ...createMockWidget(),
       type: 'document',
-      path: '/Users/samule/repo/workspace-canvas-app/', // ends with /
+      path: '/Users/samule/repo/canvas-ai/', // ends with /
     };
 
     // Attempt save

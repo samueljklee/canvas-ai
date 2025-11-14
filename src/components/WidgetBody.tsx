@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Body Component
+ * Canvas AI - Widget Body Component
  * Adaptive content area based on widget state
  */
 

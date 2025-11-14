@@ -14,7 +14,7 @@ describe.skip('DatabaseService', () => {
     // Use in-memory SQLite for fast, isolated tests
     // Pass a mock app object
     const mockApp = {
-      getPath: () => '/tmp/test-workspace-canvas',
+      getPath: () => '/tmp/test-canvas-ai',
     };
     (global as any).app = mockApp;
     db = new DatabaseService(':memory:');

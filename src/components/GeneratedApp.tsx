@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Generated App Component
+ * Canvas AI - Generated App Component
  * Dynamically renders user-generated React applications
  */
 

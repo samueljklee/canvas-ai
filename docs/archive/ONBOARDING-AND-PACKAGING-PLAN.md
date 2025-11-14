@@ -1,4 +1,4 @@
-# Workspace Canvas App - Onboarding & Packaging Implementation Plan
+# Canvas AI App - Onboarding & Packaging Implementation Plan
 
 **Version:** 1.0
 **Last Updated:** 2025-10-14
@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-This document outlines the complete implementation plan for converting Workspace Canvas App from a developer-focused .env-based application to a production-ready, user-friendly packaged application with smooth onboarding for Mac and Windows users.
+This document outlines the complete implementation plan for converting Canvas AI App from a developer-focused .env-based application to a production-ready, user-friendly packaged application with smooth onboarding for Mac and Windows users.
 
 **Goals:**
 1. Enable non-technical users to configure and use the app
@@ -59,7 +59,7 @@ This document outlines the complete implementation plan for converting Workspace
 
 Step 1: Welcome Screen (Modal)
 ┌─────────────────────────────────────┐
-│  Welcome to Workspace Canvas! 🎨     │
+│  Welcome to Canvas AI! 🎨     │
 │                                      │
 │  Coordinate multiple Claude AI       │
 │  agents in an infinite canvas.       │
@@ -139,7 +139,7 @@ Step 3: Quick Tour
 │  • ⌘K - Command palette              │
 │  • ⚙️ Settings - Update config       │
 │                                      │
-│  [Start Using Workspace Canvas]      │
+│  [Start Using Canvas AI]      │
 └─────────────────────────────────────┘
 ```
 
@@ -256,7 +256,7 @@ class ConfigManager {
     // Encrypted store for sensitive data
     this.encryptedStore = new Store({
       name: 'secure',
-      encryptionKey: 'workspace-canvas-secure-key',
+      encryptionKey: 'canvas-ai-secure-key',
     });
   }
 
@@ -523,7 +523,7 @@ contextBridge.exposeInMainWorld('config', configApi);
 │                                      │
 │  Database Location:                  │
 │  ~/Library/Application Support/      │
-│  workspace-canvas/workspace.db       │
+│  canvas-ai/workspace.db       │
 │                                      │
 │  Storage Used: 2.4 MB                │
 │  Workspaces: 3                       │
@@ -544,7 +544,7 @@ contextBridge.exposeInMainWorld('config', configApi);
 #### **4. ℹ️ About Tab**
 ```
 ┌─────────────────────────────────────┐
-│  About Workspace Canvas              │
+│  About Canvas AI              │
 │                                      │
 │  Version: 0.1.0                      │
 │  Electron: 30.5.1                    │
@@ -558,7 +558,7 @@ contextBridge.exposeInMainWorld('config', configApi);
 │  Open Source Licenses                │
 │  [View Licenses]                     │
 │                                      │
-│  © 2025 Workspace Canvas             │
+│  © 2025 Canvas AI             │
 └─────────────────────────────────────┘
 ```
 
@@ -649,7 +649,7 @@ src/components/SettingsModal.tsx  (+100 lines - API key tab)
 #### **User Flow Testing:**
 ```
 Test 1: Fresh Install
-- Delete config: rm -rf ~/Library/Application\ Support/workspace-canvas-mvp/
+- Delete config: rm -rf ~/Library/Application\ Support/canvas-ai/
 - Launch app
 - Verify wizard appears
 - Enter invalid key → See error
@@ -703,9 +703,9 @@ build/entitlements.mac.plist       (Mac permissions)
 #### **electron-builder.json:**
 ```json
 {
-  "appId": "com.workspace-canvas.app",
-  "productName": "Workspace Canvas",
-  "copyright": "Copyright © 2025 Workspace Canvas",
+  "appId": "com.canvas-ai.app",
+  "productName": "Canvas AI",
+  "copyright": "Copyright © 2025 Canvas AI",
   "directories": {
     "output": "release",
     "buildResources": "build"
@@ -736,7 +736,7 @@ build/entitlements.mac.plist       (Mac permissions)
     "entitlementsInherit": "build/entitlements.mac.plist"
   },
   "dmg": {
-    "title": "Workspace Canvas ${version}",
+    "title": "Canvas AI ${version}",
     "icon": "build/icon.icns",
     "contents": [
       {
@@ -862,7 +862,7 @@ export class AutoUpdater {
   "publish": {
     "provider": "github",
     "owner": "your-username",
-    "repo": "workspace-canvas-app"
+    "repo": "canvas-ai"
   }
 }
 ```
@@ -987,7 +987,7 @@ Methods:
 
 ```bash
 # Test 1: Fresh install without config
-rm -rf ~/Library/Application\ Support/workspace-canvas-mvp/
+rm -rf ~/Library/Application\ Support/canvas-ai/
 npm start
 # Expected: Onboarding wizard appears
 
@@ -1062,7 +1062,7 @@ npm run dist:win
 ```
 1. Download the DMG file for your Mac (ARM64 for M1/M2/M3, x64 for Intel)
 2. Open the DMG file
-3. Drag "Workspace Canvas" to Applications folder
+3. Drag "Canvas AI" to Applications folder
 4. Open from Applications (right-click → Open first time if not code signed)
 5. Follow onboarding wizard to configure API key
 ```
@@ -1216,7 +1216,7 @@ export default defineConfig({
 ### **Files to Create:**
 
 1. **README.md** (for users, not developers)
-   - What is Workspace Canvas
+   - What is Canvas AI
    - Installation instructions
    - Getting an API key
    - Basic usage guide
@@ -1351,7 +1351,7 @@ async getApiKey(): Promise<string | null> {
 
 Before implementation, please confirm:
 
-1. **App Name:** "Workspace Canvas" official? Or rebrand?
+1. **App Name:** "Canvas AI" official? Or rebrand?
 
 2. **Onboarding Length:**
    - Quick (1 step: API key only)
@@ -1378,7 +1378,7 @@ Before implementation, please confirm:
 ## Decisions Made
 
 **From User Input (2025-10-14):**
-1. ✅ **App Name:** Workspace Canvas (may rebrand later if better name found)
+1. ✅ **App Name:** Canvas AI (may rebrand later if better name found)
 2. ✅ **License:** Proprietary/Confidential (private, high confidential)
 3. ✅ **GitHub Repo:** Use placeholder values for now
 4. ✅ **First Launch:** Show onboarding wizard (blocking modal)
@@ -1534,7 +1534,7 @@ Before implementation, please confirm:
 
 #### **Documentation:**
 - [ ] Create user-facing README.md
-  - [ ] What is Workspace Canvas
+  - [ ] What is Canvas AI
   - [ ] Installation instructions
   - [ ] Getting started guide
   - [ ] Screenshots

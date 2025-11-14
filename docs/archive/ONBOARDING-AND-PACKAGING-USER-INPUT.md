@@ -1,4 +1,4 @@
-# Workspace Canvas - User Input Required
+# Canvas AI - User Input Required
 
 **Status:** Active
 **Last Updated:** 2025-10-14
@@ -11,7 +11,7 @@ This document tracks questions and decisions needed from the user during the onb
 
 ### ✅ **Answered (2025-10-14)**
 
-1. **App Name:** Workspace Canvas (open to cooler names)
+1. **App Name:** Canvas AI (open to cooler names)
 2. **License:** Proprietary/Confidential (high confidential)
 3. **GitHub Repo:** Use placeholder values
 4. **First Launch:** Show onboarding wizard (blocking modal)
@@ -40,8 +40,8 @@ This document tracks questions and decisions needed from the user during the onb
    - Suggested: "Coordinate multiple Claude AI agents in an infinite canvas workspace"
 
 3. **Window Title:**
-   - Keep as "Workspace Canvas"?
-   - Or something like "Workspace Canvas - [workspace name]"?
+   - Keep as "Canvas AI"?
+   - Or something like "Canvas AI - [workspace name]"?
 
 ---
 
@@ -105,7 +105,7 @@ This document tracks questions and decisions needed from the user during the onb
 
 1. **Company/Author Name:**
    - Package metadata needs author name
-   - Use "Workspace Canvas Team" or your name/company?
+   - Use "Canvas AI Team" or your name/company?
 
 2. **App Version:**
    - Start with 0.1.0-beta?
@@ -113,7 +113,7 @@ This document tracks questions and decisions needed from the user during the onb
 
 3. **Update URL:**
    - When you set up GitHub releases, I'll need the repo URL
-   - Format: `https://github.com/username/workspace-canvas-app`
+   - Format: `https://github.com/username/canvas-ai`
 
 ---
 
@@ -153,9 +153,9 @@ These don't block current work, but good to think about:
 ### **Default Choices:**
 
 1. **Config Storage Location:**
-   - Mac: `~/Library/Application Support/workspace-canvas/config.json`
-   - Windows: `%APPDATA%/workspace-canvas/config.json`
-   - Linux: `~/.config/workspace-canvas/config.json`
+   - Mac: `~/Library/Application Support/canvas-ai/config.json`
+   - Windows: `%APPDATA%/canvas-ai/config.json`
+   - Linux: `~/.config/canvas-ai/config.json`
 
 2. **Onboarding Skip Behavior:**
    - Show reminder banner at top
@@ -191,10 +191,10 @@ These don't block current work, but good to think about:
 
 ```json
 {
-  "appId": "com.placeholder.workspace-canvas",
-  "author": "Workspace Canvas Team",
-  "repository": "https://github.com/placeholder/workspace-canvas-app",
-  "homepage": "https://github.com/placeholder/workspace-canvas-app"
+  "appId": "com.placeholder.canvas-ai",
+  "author": "Canvas AI Team",
+  "repository": "https://github.com/placeholder/canvas-ai",
+  "homepage": "https://github.com/placeholder/canvas-ai"
 }
 ```
 
@@ -205,7 +205,7 @@ These don't block current work, but good to think about:
 I'll use this for proprietary code:
 ```
 /**
- * Workspace Canvas App
+ * Canvas AI App
  * Copyright (c) 2025 [Your Company/Name]
  * All Rights Reserved
  *

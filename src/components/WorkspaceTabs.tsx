@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Workspace Tabs Component
+ * Canvas AI - Workspace Tabs Component
  * Browser-style tabs for switching between workspaces
  */
 

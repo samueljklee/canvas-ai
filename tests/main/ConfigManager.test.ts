@@ -17,7 +17,7 @@ jest.mock('electron', () => ({
     }),
   },
   app: {
-    getPath: jest.fn(() => '/tmp/test-workspace-canvas'),
+    getPath: jest.fn(() => '/tmp/test-canvas-ai'),
     getVersion: jest.fn(() => '0.1.0'),
   },
 }));

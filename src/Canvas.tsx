@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Main Canvas Component
+ * Canvas AI - Main Canvas Component
  * Example implementation showing how to use the widget system
  */
 
@@ -963,9 +963,9 @@ export const Canvas: React.FC = () => {
           <button
             className="toolbar-button"
             onClick={async () => {
-              await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Workspace Canvas Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Workspace Canvas:\n\n')}`);
+              await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Canvas AI Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Canvas AI:\n\n')}`);
             }}
-            title="Send feedback about Workspace Canvas"
+            title="Send feedback about Canvas AI"
           >
             📧 Feedback
           </button>
@@ -1042,7 +1042,7 @@ export const Canvas: React.FC = () => {
                   { icon: '⚙️', label: 'Open Settings', action: () => { setShowCommandPalette(false); setShowSettingsModal(true); }, shortcut: '⌘,' },
                   { icon: '📧', label: 'Send Feedback', action: async () => {
                     setShowCommandPalette(false);
-                    await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Workspace Canvas Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Workspace Canvas:\n\n')}`);
+                    await window.shell?.openExternal(`mailto:samule@microsoft.com?subject=${encodeURIComponent('Canvas AI Feedback')}&body=${encodeURIComponent('Hi Samuel,\n\nI wanted to share some feedback about Canvas AI:\n\n')}`);
                   }, shortcut: undefined },
                   { icon: '⌨️', label: 'Keyboard Shortcuts', action: () => { setShowCommandPalette(false); setShowShortcutsModal(true); }, shortcut: undefined },
                   { icon: '🗑️', label: 'Clear Workspace', action: handleClearWorkspace, shortcut: undefined },

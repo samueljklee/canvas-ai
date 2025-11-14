@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Factory Utilities
+ * Canvas AI - Widget Factory Utilities
  * Helper functions for creating and managing widgets
  */
 

@@ -1,4 +1,4 @@
-# Workspace Canvas - Onboarding & Packaging Implementation Progress
+# Canvas AI - Onboarding & Packaging Implementation Progress
 
 **Last Updated:** 2025-10-14
 **Status:** Phase 2 Complete, Phase 3 In Progress
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Converting Workspace Canvas from developer-focused .env configuration to production-ready packaged application with user-friendly onboarding.
+Converting Canvas AI from developer-focused .env configuration to production-ready packaged application with user-friendly onboarding.
 
 **Timeline:** 1-2 weeks total
 **Current Progress:** ~60% complete (Phase 1 & 2 done)
@@ -276,8 +276,8 @@ Success message → Auto-refresh status
 #### **Build Configuration:**
 ```json
 {
-  "appId": "com.workspace-canvas.app",
-  "productName": "Workspace Canvas",
+  "appId": "com.canvas-ai.app",
+  "productName": "Canvas AI",
   "mac": {
     "target": ["dmg"],
     "arch": ["arm64", "x64"]
@@ -367,7 +367,7 @@ Success message → Auto-refresh status
    - Distribution platform (GitHub releases?)
 
 3. **Test Onboarding:**
-   - Delete config: `rm -rf ~/Library/Application\ Support/workspace-canvas/`
+   - Delete config: `rm -rf ~/Library/Application\ Support/canvas-ai/`
    - Run app: `npm run dev`
    - Go through wizard and provide feedback
 

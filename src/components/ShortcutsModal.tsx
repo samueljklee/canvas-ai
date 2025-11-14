@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Keyboard Shortcuts Modal
+ * Canvas AI - Keyboard Shortcuts Modal
  * Shows all available keyboard shortcuts
  */
 

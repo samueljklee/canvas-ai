@@ -1,4 +1,4 @@
-# Feature Review Guide - Workspace Canvas
+# Feature Review Guide - Canvas AI
 
 **Version:** 2.0.1
 **Last Updated:** 2025-10-10

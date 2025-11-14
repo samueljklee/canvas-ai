@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Real Anthropic Agent Manager
+ * Canvas AI - Real Anthropic Agent Manager
  * Manages multiple Claude API conversation streams
  */
 

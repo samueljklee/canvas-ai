@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Widget Dragging Performance Tests
+ * Canvas AI - Widget Dragging Performance Tests
  * Tests for smooth widget dragging with requestAnimationFrame
  */
 

@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - 2D Bin-Packing Algorithm Tests
+ * Canvas AI - 2D Bin-Packing Algorithm Tests
  * Tests for intelligent widget auto-arrangement
  */
 

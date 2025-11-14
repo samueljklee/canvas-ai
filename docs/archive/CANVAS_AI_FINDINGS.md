@@ -1,12 +1,12 @@
-# Workspace Canvas: Dynamic React Component Generation - Comprehensive Analysis
+# Canvas AI: Dynamic React Component Generation - Comprehensive Analysis
 
 ## Project Overview
 
-**Location**: `/Users/samule/repo/workspace-canvas-app`
+**Location**: `/Users/samule/repo/canvas-ai`
 **Type**: Electron Desktop Application (React + TypeScript)
 **Purpose**: Multi-instance AI agent orchestrator on an infinite 2D canvas
 
-The workspace-canvas-app is an innovative Electron-based desktop application that demonstrates how to:
+The canvas-ai is an innovative Electron-based desktop application that demonstrates how to:
 1. Manage multiple independent AI agent instances
 2. Provide visual organization on an infinite 2D canvas
 3. Execute commands in real-time with streaming output
@@ -20,7 +20,7 @@ The workspace-canvas-app is an innovative Electron-based desktop application tha
 ### 1.1 High-Level Structure
 
 ```
-workspace-canvas-app/
+canvas-ai/
 ├── src/
 │   ├── main/                    # Electron main process
 │   │   ├── index.ts            # App entry point, IPC handlers
@@ -70,7 +70,7 @@ workspace-canvas-app/
 
 ### 2.1 The GeneratedApp Component (CORE INNOVATION)
 
-**File**: `/Users/samule/repo/workspace-canvas-app/src/components/GeneratedApp.tsx`
+**File**: `/Users/samule/repo/canvas-ai/src/components/GeneratedApp.tsx`
 
 This is the KEY component that implements dynamic component generation. Here's exactly how it works:
 
@@ -220,7 +220,7 @@ class ErrorBoundary extends React.Component<
 
 ### 2.4 Integration into AgentWidget
 
-**File**: `/Users/samule/repo/workspace-canvas-app/src/components/AgentWidget.tsx`
+**File**: `/Users/samule/repo/canvas-ai/src/components/AgentWidget.tsx`
 
 The widget selects which component to render based on `widget.type`:
 
@@ -246,7 +246,7 @@ export const AgentWidget: React.FC<AgentWidgetProps> = ({ widget, ... }) => {
 
 ### 3.1 Main Canvas Component
 
-**File**: `/Users/samule/repo/workspace-canvas-app/src/Canvas.tsx` (1115 lines)
+**File**: `/Users/samule/repo/canvas-ai/src/Canvas.tsx` (1115 lines)
 
 The Canvas is the orchestrator for:
 1. Widget layout and rendering
@@ -290,7 +290,7 @@ The Canvas is the orchestrator for:
 
 ### 3.2 Widget Type System
 
-**File**: `/Users/samule/repo/workspace-canvas-app/src/types/widget.ts`
+**File**: `/Users/samule/repo/canvas-ai/src/types/widget.ts`
 
 ```typescript
 export type WidgetType = 'agent' | 'document' | 'filebrowser' | 'generated-app';
@@ -317,7 +317,7 @@ export type WidgetState = 'expanded' | 'compact' | 'minimized';
 
 ### 3.3 Widget Factory
 
-**File**: `/Users/samule/repo/workspace-canvas-app/src/utils/widgetFactory.ts`
+**File**: `/Users/samule/repo/canvas-ai/src/utils/widgetFactory.ts`
 
 Creates new widgets with sensible defaults:
 
@@ -753,7 +753,7 @@ return (
 
 ## CONCLUSION
 
-The workspace-canvas-app demonstrates a sophisticated approach to dynamic React component generation using:
+The canvas-ai demonstrates a sophisticated approach to dynamic React component generation using:
 
 1. **Code as Data**: Store React component code as strings
 2. **Function Constructor**: Execute code safely with injected dependencies

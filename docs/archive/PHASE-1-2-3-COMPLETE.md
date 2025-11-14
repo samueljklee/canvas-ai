@@ -1,4 +1,4 @@
-# 🎉 Workspace Canvas - Phase 1, 2, 3 COMPLETE!
+# 🎉 Canvas AI - Phase 1, 2, 3 COMPLETE!
 
 **Date:** 2025-10-14
 **Implementation Time:** ~5 hours
@@ -65,7 +65,7 @@ npm run dist:all
 # Test without creating installer
 npm run pack
 
-# Creates: release/mac-arm64/Workspace Canvas.app (unpacked)
+# Creates: release/mac-arm64/Canvas AI.app (unpacked)
 ```
 
 ---
@@ -165,7 +165,7 @@ npm run pack
 
 ```bash
 # Simulate fresh install
-rm -rf ~/Library/Application\ Support/workspace-canvas/
+rm -rf ~/Library/Application\ Support/canvas-ai/
 
 # Launch app
 npm run dev
@@ -215,7 +215,7 @@ git push origin v0.1.0-beta
 npm run dist:all
 
 # Upload to GitHub Releases page
-# Testers download from: github.com/microsoft/workspace-canvas-app/releases
+# Testers download from: github.com/microsoft/canvas-ai/releases
 ```
 
 ---
@@ -371,7 +371,7 @@ cc8bbf7f - fix: Downgrade electron-store to v8 for CommonJS compatibility
 
 ## 🎊 Summary
 
-**Your Workspace Canvas app is ready for beta distribution!**
+**Your Canvas AI app is ready for beta distribution!**
 
 **What you have:**
 - ✅ Professional onboarding (non-technical users can set up)

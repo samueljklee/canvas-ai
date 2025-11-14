@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Setup Reminder Banner
+ * Canvas AI - Setup Reminder Banner
  * Banner shown at top of canvas when API key is not configured
  */
 

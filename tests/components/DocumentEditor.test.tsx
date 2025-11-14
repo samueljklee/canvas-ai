@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - DocumentEditor Component Tests
+ * Canvas AI - DocumentEditor Component Tests
  * Tests for Monaco editor, markdown preview, and Mermaid diagrams
  */
 

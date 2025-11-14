@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Preload Script
+ * Canvas AI - Preload Script
  * Exposes safe IPC API to renderer process
  */
 

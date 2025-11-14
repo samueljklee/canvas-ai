@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Database Service
+ * Canvas AI - Database Service
  * SQLite-based persistence for workspaces, widgets, and conversations
  */
 
@@ -62,7 +62,7 @@ export class DatabaseService {
   constructor() {
     // Store database in user data directory
     const userDataPath = app.getPath('userData');
-    this.dbPath = path.join(userDataPath, 'workspace-canvas.db');
+    this.dbPath = path.join(userDataPath, 'canvas-ai.db');
 
     console.log('[DatabaseService] Opening database at:', this.dbPath);
     this.db = new Database(this.dbPath);

@@ -1,5 +1,5 @@
 /**
- * Workspace Canvas - Workspace Manager Hook
+ * Canvas AI - Workspace Manager Hook
  * Manages multiple workspaces with instant switching and instance lifecycle
  */
 

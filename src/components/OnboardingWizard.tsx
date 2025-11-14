@@ -137,7 +137,7 @@ const OnboardingWizard: React.FC<OnboardingWizardProps> = ({ onComplete, onSkip 
 
   const renderWelcome = () => (
     <div className="onboarding-step welcome-step">
-      <h1>Welcome to Workspace Canvas</h1>
+      <h1>Welcome to Canvas AI</h1>
       <p className="subtitle">Your AI-powered workspace companion</p>
 
       <div className="feature-list">
@@ -180,7 +180,7 @@ const OnboardingWizard: React.FC<OnboardingWizardProps> = ({ onComplete, onSkip 
   const renderApiKeyStep = () => (
     <div className="onboarding-step api-key-step">
       <h2>Connect Your API Key</h2>
-      <p className="subtitle">To use Workspace Canvas, you'll need an Anthropic API key</p>
+      <p className="subtitle">To use Canvas AI, you'll need an Anthropic API key</p>
 
       <div className="api-key-form">
         <div className="input-group">
@@ -311,7 +311,7 @@ const OnboardingWizard: React.FC<OnboardingWizardProps> = ({ onComplete, onSkip 
     <div className="onboarding-step complete-step">
       <div className="success-icon">✓</div>
       <h2>All Set!</h2>
-      <p className="subtitle">You're ready to start using Workspace Canvas</p>
+      <p className="subtitle">You're ready to start using Canvas AI</p>
 
       <div className="completion-message">
         <p>
@@ -322,7 +322,7 @@ const OnboardingWizard: React.FC<OnboardingWizardProps> = ({ onComplete, onSkip 
 
       <div className="button-group">
         <button className="btn-primary" onClick={handleComplete}>
-          Start Using Workspace Canvas
+          Start Using Canvas AI
         </button>
       </div>
     </div>

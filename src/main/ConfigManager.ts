@@ -1,5 +1,5 @@
 /**
- * ConfigManager - Secure configuration management for Workspace Canvas
+ * ConfigManager - Secure configuration management for Canvas AI
  * Handles API keys with encryption, onboarding state, and user preferences
  */
 
@@ -50,7 +50,7 @@ export class ConfigManager {
     // Separate store for encrypted API key
     this.encryptedStore = new Store<{ apiKeyEncrypted?: string }>({
       name: 'secrets',
-      encryptionKey: 'workspace-canvas-encryption-key',
+      encryptionKey: 'canvas-ai-encryption-key',
     });
 
     // Update version if app is available (safe to call after app is ready)

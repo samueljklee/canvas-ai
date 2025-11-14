@@ -1,4 +1,4 @@
-# Workspace Canvas - Installation Guide
+# Canvas AI - Installation Guide
 
 **Version:** 0.1.0-beta
 **Last Updated:** 2025-10-14
@@ -46,13 +46,13 @@ Download the appropriate DMG file for your Mac:
 #### Step 2: Install
 
 1. **Open the DMG file** by double-clicking it
-2. **Drag "Workspace Canvas"** to the Applications folder
+2. **Drag "Canvas AI"** to the Applications folder
 3. **Eject the DMG** (right-click → Eject)
 
 #### Step 3: First Launch
 
 1. **Open Applications folder**
-2. **Find "Workspace Canvas"**
+2. **Find "Canvas AI"**
 3. **Right-click** the app and select **"Open"** (important for first launch!)
 4. If you see a security dialog:
    - Click **"Open"** to confirm
@@ -84,7 +84,7 @@ Download the Windows installer:
    - Click **"More info"**
    - Click **"Run anyway"**
 3. Follow the installation wizard:
-   - Choose installation directory (default: `C:\Program Files\Workspace Canvas`)
+   - Choose installation directory (default: `C:\Program Files\Canvas AI`)
    - Select if you want desktop/start menu shortcuts
    - Click **"Install"**
 
@@ -119,14 +119,14 @@ Download the Windows installer:
 
 #### Debian/Ubuntu (DEB Package)
 
-1. **Download:** `workspace-canvas_0.1.0-beta_amd64.deb`
+1. **Download:** `canvas-ai_0.1.0-beta_amd64.deb`
 2. **Install:**
    ```bash
-   sudo dpkg -i workspace-canvas_0.1.0-beta_amd64.deb
+   sudo dpkg -i canvas-ai_0.1.0-beta_amd64.deb
    ```
 3. **Run from applications menu** or:
    ```bash
-   workspace-canvas
+   canvas-ai
    ```
 
 ---
@@ -144,13 +144,13 @@ Download the Windows installer:
 1. Log in to the Anthropic Console
 2. Navigate to **"API Keys"** section
 3. Click **"Create Key"**
-4. Give it a name (e.g., "Workspace Canvas")
+4. Give it a name (e.g., "Canvas AI")
 5. **Copy the key** - it starts with `sk-ant-`
 6. **Save it safely** - you won't be able to see it again!
 
 ### Step 3: Configure in App
 
-1. Launch Workspace Canvas
+1. Launch Canvas AI
 2. Enter the API key when prompted
 3. Click "Validate & Continue"
 4. You're ready to go!
@@ -182,7 +182,7 @@ The onboarding wizard appears on first launch and guides you through:
 
 4. **Completion:**
    - Setup complete!
-   - Start using Workspace Canvas
+   - Start using Canvas AI
 
 ### Skipping Setup
 
@@ -220,25 +220,25 @@ You can add a new key anytime via Settings.
 
 ### macOS
 
-1. **Quit Workspace Canvas** (⌘Q)
+1. **Quit Canvas AI** (⌘Q)
 2. **Delete the app:**
    - Open Applications folder
-   - Drag "Workspace Canvas" to Trash
+   - Drag "Canvas AI" to Trash
 3. **Delete data (optional):**
    ```bash
-   rm -rf ~/Library/Application\ Support/workspace-canvas/
+   rm -rf ~/Library/Application\ Support/canvas-ai/
    ```
 
 ### Windows
 
-1. **Quit Workspace Canvas**
+1. **Quit Canvas AI**
 2. **Uninstall via Settings:**
-   - Settings → Apps → Workspace Canvas → Uninstall
+   - Settings → Apps → Canvas AI → Uninstall
 3. **Or use Control Panel:**
    - Control Panel → Programs → Uninstall a program
-   - Select "Workspace Canvas" → Uninstall
+   - Select "Canvas AI" → Uninstall
 4. **Delete data (optional):**
-   - Delete: `%APPDATA%\workspace-canvas\`
+   - Delete: `%APPDATA%\canvas-ai\`
 
 ### Linux
 
@@ -247,12 +247,12 @@ You can add a new key anytime via Settings.
 
 **DEB:**
 ```bash
-sudo dpkg -r workspace-canvas
+sudo dpkg -r canvas-ai
 ```
 
 **Data (optional):**
 ```bash
-rm -rf ~/.config/workspace-canvas/
+rm -rf ~/.config/canvas-ai/
 ```
 
 ---
@@ -286,10 +286,10 @@ rm -rf ~/.config/workspace-canvas/
 - Try deleting config and relaunching:
   ```bash
   # macOS
-  rm -rf ~/Library/Application\ Support/workspace-canvas/
+  rm -rf ~/Library/Application\ Support/canvas-ai/
 
   # Windows
-  rmdir /s %APPDATA%\workspace-canvas\
+  rmdir /s %APPDATA%\canvas-ai\
   ```
 
 **Onboarding doesn't appear:**
@@ -336,8 +336,8 @@ rm -rf ~/.config/workspace-canvas/
 For advanced users, you can manually edit config:
 
 **Location:**
-- macOS: `~/Library/Application Support/workspace-canvas/config.json`
-- Windows: `%APPDATA%\workspace-canvas\config.json`
+- macOS: `~/Library/Application Support/canvas-ai/config.json`
+- Windows: `%APPDATA%\canvas-ai\config.json`
 
 **Warning:** Don't edit while app is running. API key is in separate encrypted file.
 
@@ -347,7 +347,7 @@ If you have the source code:
 
 ```bash
 # Clone repo
-git clone https://github.com/microsoft/workspace-canvas-app
+git clone https://github.com/microsoft/canvas-ai
 
 # Install
 pnpm install
@@ -372,7 +372,7 @@ Currently manual - copy these files:
 
 ### Import to Another Machine
 
-1. Install Workspace Canvas on new machine
+1. Install Canvas AI on new machine
 2. Close the app
 3. Copy files to config directory
 4. Relaunch app
@@ -482,6 +482,6 @@ This is currently a proprietary application. For collaboration inquiries, contac
 
 ---
 
-**Thank you for using Workspace Canvas!** 🎨
+**Thank you for using Canvas AI!** 🎨
 
 *Built with ❤️ using Claude AI*
